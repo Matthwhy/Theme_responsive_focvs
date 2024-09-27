@@ -12,7 +12,12 @@ FOCVS THEME RESPONSIVE
 
 
 
+Visão Geral
+Apresenta a criação de um módulo que integra o framework de estilo do FOCVS ao design responsivo, utilizando o módulo padrão web_responsive. O objetivo deste módulo é proporcionar uma experiência de usuário aprimorada, garantindo que as interfaces sejam não apenas funcionais, mas também visualmente atraentes e alinhadas com a identidade visual do FOCVS.
 
+Objetivos do Módulo
+Estilização Consistente: Incorporar os estilos do tema FOCVS em todas as páginas e elementos da interface do Odoo, garantindo uma aparência uniforme.
+Responsividade: Manter a responsividade do módulo web_responsive, assegurando que todos os elementos se ajustem adequadamente a diferentes tamanhos de tela.
 
 
 
