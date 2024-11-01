@@ -1,0 +1,692 @@
+/* Copyright 2018 Tecnativa - Jairo Llopis
+ * Copyright 2021 ITerra - Sergey Shebanin
+ * Copyright 2023 Onestein - Anjeel Haria
+ * License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). */
+
+$chatter_zone_width: 35% !important;
+
+// Scroll all but top bar
+html .o_web_client .o_action_manager .o_action {
+    @include media-breakpoint-down(sm) {
+        overflow: auto;
+
+        .o_content {
+            overflow: visible !important;
+        }
+    }
+    max-width: 100%;
+}
+.o_main_navbar {
+    border-bottom: 1px solid #1c2340;
+    background: #1c2340;
+}
+.o_navbar_apps_menu .dropdown-menu-custom {
+
+    background: url(/web_responsive/static/src/components/apps_menu/../../img/home-menu-bg-overlay.svg), linear-gradient(to bottom, #1c2340, #000829) !important;
+}
+
+//Alteraçaõ app menu//
+o_navbar_apps_menu .dropdown-toggle {
+	padding: 0px 14px !important;
+}
+.btn-fill-primary, .btn-primary {
+    color: #FFFFFF;
+    border-color: #0679b7;
+}
+
+.btn-primary:hover{
+    background-color: #004970;
+}
+.o_searchview_facet .o_searchview_facet_label {
+    background: var(--SearchBar-facet-background, #0679b7);
+    color: var(--SearchBar-facet-color, #FFFFFF);
+}
+.o_form_view .o_form_uri {
+    display: inline-block;
+    color: #0679b7;
+}
+.o_form_view:hover .o_form_uri:hover {
+    display: inline-block;
+    color: #004970;
+}
+
+.btn-fill-odoo:hover, .btn-odoo:hover {
+    color: #FFFFFF;
+    background-color: #004970;
+    border-color: #004970;
+}
+.o_input{
+    border-color: #a1a1a1 !important;
+}
+.form-check-input:checked {
+    background-color: #0679b7;
+    border-color: #0679b7;
+}
+.btn-fill-odoo, .btn-odoo {
+    color: #FFFFFF;
+    background-color: #0679b7;
+    border-color: #0679b7;
+}
+.o_main_navbar .o_menu_systray > * > a .badge, .o_main_navbar .o_menu_systray > * > .dropdown > a .badge, .o_main_navbar .o_menu_systray > * > button .badge, .o_main_navbar .o_menu_systray > * > label .badge {
+    background-color: var(--o-navbar-badge-bg, #0679b7);
+}
+code {
+    font-size: 0.875em;
+    color: #0679b7;
+    word-wrap: break-word;
+}
+.btn, .o_button {
+    border-radius: 7px;
+}
+a {
+    color:black;
+}
+a:hover{
+    color: #0679b7;
+}
+.btn-link {
+
+    color: #000000;
+    text-decoration: none;
+}
+.btn-link:hover, .btn-link:focus {
+    color: #0679b7 !important;
+    text-decoration: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0679b7;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+
+}
+.o_form_view .o_form_uri > span:first-child {
+    color: #0679b7;
+}
+.o_form_view:hover,.o_form_uri:hover > span:first-child:hover{
+    color:black;
+}
+.text-odoo {
+    color: #0679b7 !important;
+}
+.nav-link:hover,
+.nav-link.active:hover,.nav-link.active,.o_notebook {
+    color: #000000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.ui-widget.ui-autocomplete .ui-menu-item.o_m2o_dropdown_option > a {
+    color: #0679b7;
+}.ui-widget.ui-autocomplete:hover .ui-menu-item.o_m2o_dropdown_option:hover > a {
+    color: #1c2340;
+}
+.o_ChatWindowHeader {
+    background-color: #1c2340;
+    color: #FFFFFF;
+}
+  .form-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+
+    background: #0679b7;
+  }
+
+.o_form_button_create:hover{
+    background-color: #4c4c4c3a;
+}
+:not(.dropstart) > .dropdown-item.active:not(.dropdown-item_active_noarrow):before, :not(.dropstart) > .dropdown-item.selected:not(.dropdown-item_active_noarrow):before {
+
+    color: #0679b7;
+
+}
+.o_field_highlight .o_field_widget .o_input, .o_field_highlight.o_field_widget .o_input {
+    border-color: #0679b7 !important;
+}
+.bg-odoo {
+    --bg-opacity: 1;
+    background-color: #0679b7 !important;
+}
+.o_kanban_renderer.o_kanban_dashboard.o_hr_recruitment_kanban .o_job_activities .to-recruit {
+    color: #0679b7;
+
+}
+.o_progressbar .o_progress > div {
+    background-color: #0679b7;
+}
+
+.btn-link:active {
+    color: #0679b7;
+}
+.btn-link:hover{
+    color: #0679b7 !important;
+}
+.btn-link.btn-primary:hover, .btn-link.text-primary:hover {
+    text-transform: none;
+    color: #0679b7 !important;
+}
+.o_field_statusbar > .o_statusbar_status > .o_arrow_button.o_arrow_button_current.disabled {
+    background-color: #0679b7;
+    color: #FFFFFF;
+}
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: #0679b7;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap-datetimepicker-widget .datepicker table td.today:not(.active):before {
+    border-bottom-color: #0679b7;
+}
+.o_calendar_renderer .o_calendar_widget .fc-timeGridDay-view .fc-widget-header.fc-today, .o_calendar_renderer .o_calendar_widget .fc-timeGridWeek-view .fc-widget-header.fc-today {
+    border-radius: 25px;
+    background: #0679b7;
+    color: white;
+}
+.o-form-buttonbox .btn.oe_stat_button > .o_stat_info .o_stat_value, .o-form-buttonbox .btn.oe_stat_button > span .o_stat_value, .o-form-buttonbox .btn.oe_stat_button > .o_field_statinfo .o_stat_value {
+    font-weight: 500;
+    color: #0679b7;
+}
+.btn-primary:active{
+    border-color: #004970;
+}
+.o_field_widget.o_field_many2one .o_external_button {
+    color: #0679b7;
+    border: none;
+}
+.btn-secondary {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.o_edit_website_container:not(.o_translatable) {
+    color: #FFFFFF;
+    background-color: #0679b7;
+    border-color: #0679b7;
+}
+.o_frontend_to_backend_nav::before {
+
+    border-top: 20px solid #0679b7 !important;
+    border-left: 20px solid #0679b7 !important;
+
+}
+.o_edit_website_container:not(.o_translatable):hover {
+    color: #FFFFFF;
+    background-color: #1c2340;
+    border-color: #1c2340;
+}
+
+.o_frontend_to_backend_nav .o_frontend_to_backend_apps_btn {
+    background-color: #0679b7;
+}
+.o_frontend_to_backend_nav:hover .o_frontend_to_backend_apps_btn:hover {
+    background-color: #1c2340;
+}
+@media (max-width: 575.98px) {
+    .o_base_settings .o_setting_container .settings_tab .selected {
+        background-color: #212529;
+        box-shadow: inset 0 -5px #0679b7 !important;
+    }
+}
+a.text-primary:hover, a.text-primary:focus, button.text-primary:hover, button.text-primary:focus {
+    color: #004970 !important;
+}
+.o_base_settings .o_setting_container .settings_tab .selected {
+    background-color: var(--settings__tab-bg--active);
+    box-shadow: inset 2px 0 0 #0679b7 !important;
+}
+.text-primary.fa-circle {
+    color: #0679b7 !important;
+}
+.o_enterprise_label{
+    background-color: #0679b7 !important;
+}
+.rounded {
+    border-radius: 7px !important;
+}
+.btn-secondary:hover {
+    color:#000000
+}
+.btn-outline-primary {
+    color: #0679b7;
+    border-color: #0679b7;
+}
+.btn-fill-primary{
+    background-color: #0679b7 !important;
+}
+.btn-outline-primary:hover {
+    color: #004970;
+    border-color: #004970;
+}
+
+.badge.text-bg-default, .badge.bg-light, .badge.text-bg-light, .badge.bg-default, .badge.text-primary {
+    outline: 1px solid #0679b7;
+    outline-offset: -1px;
+}
+.badge.text-bg-default, .badge.bg-light, .badge.text-bg-light, .badge.bg-default, .badge.text-primary {
+    outline: 1px solid #0679b7;
+    outline-offset: -1px;
+}
+.text-primary {
+    color: #0679b7 !important;
+}
+.form-check-input:hover{
+    border-color: #0679b7 !important;
+}
+
+.o_field_statusbar > .o_statusbar_status > .o_arrow_button.o_arrow_button_current.disabled:after, .o_field_statusbar > .o_statusbar_status > .o_arrow_button.o_arrow_button_current.disabled:before {
+    border-left-color: #0679b7;
+}
+@media (max-width: 575.98px) {
+    .o_base_settings .o_setting_container .settings_tab .selected {
+        background-color: #212529;
+        box-shadow: inset 0 -5px #0679b7;
+    }
+}
+.bg-primary {
+    --bg-opacity: 1;
+    background-color: #0679b7 !important;
+}
+.o_list_view .table-responsive .o_list_table tfoot tr:nth-child(1) td {
+    background-color: #1c2340 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+.o_list_number{
+    color: #ffffff;
+}
+.o_list_view .table-responsive .o_list_table thead tr:nth-child(1) th {
+    background-color: var(--ListRenderer-thead-bg-color);
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: transparent;
+    box-shadow: inset 0 0 0 #0679b7, inset 0 -1px 0 #0679b7 !important;
+}
+.o_searchview_facet .o_facet_values {
+    border: 1px solid var(--SearchBar-facet-background, #0679b7);
+}
+
+button.o_Composer_actionButton:disabled {
+    background-color: #212529;
+    color: #ffffff;
+    border-color: #212529;
+    cursor: not-allowed;
+}
+.o_required_modifier {
+    --o-input-border-color: #0679b7 !important;
+    --o-caret-color: #0679b7 !important;
+}
+.btn-primary:hover {
+    border-color: #004970 !important;
+}
+
+//
+@include media-breakpoint-down(sm) {
+    .ui-menu .ui-menu-item {
+        height: 35px;
+        font-size: 15px;
+    }
+    .o_calendar_view .o_calendar_widget {
+        .fc-timeGridDay-view .fc-axis,
+        .fc-timeGridWeek-view .fc-axis {
+            padding-left: 0px;
+        }
+        .fc-dayGridMonth-view {
+            padding-left: 0px;
+            .fc-week-number {
+                display: none;
+            }
+        }
+        .fc-dayGridYear-view {
+            padding-left: 0px;
+            > .fc-month-container {
+                width: 95%;
+            }
+        }
+        .fc-timeGridDay-view {
+            .fc-week-number {
+                padding: 0 4px;
+                width: 1em;
+                white-space: normal;
+                text-align: center;
+            }
+            .fc-day-header {
+                vertical-align: middle;
+            }
+        }
+        .fc-timeGridWeek-view .fc-widget-header {
+            word-spacing: 4em;
+            white-space: normal;
+            text-align: center;
+        }
+    }
+    .o_base_settings .o_setting_container {
+        display: block;
+        .settings_tab {
+            flex-flow: row nowrap;
+            padding-top: 0px;
+            .tab {
+                padding-right: 16px;
+            }
+            .selected {
+                background-color: #212529;
+                box-shadow: inset 0 -5px #7c7bad;
+            }
+        }
+        .settings > .app_settings_block .o_settings_container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .o_kanban_view .o_control_panel .o_cp_bottom_right .o_cp_pager .btn-group {
+        top: -1px;
+    }
+    .o_kanban_renderer {
+        width: 100%;
+    }
+}
+
+// Normal views
+.o_content,
+.modal-content {
+    max-width: 100%;
+
+    // Form views
+    .o_form_editable {
+        .o_form_sheet {
+            max-width: calc(100% - 32px) !important;
+            overflow-x: auto;
+        }
+
+        .o_cell .o_form_label:not(.o_status):not(.o_calendar_invitation) {
+            min-height: 23px;
+            @include media-breakpoint-up(md) {
+                margin-bottom: 10px;
+            }
+        }
+        .o_horizontal_separator {
+            font-size: 14px;
+        }
+
+        // Some UX improvements for form in edit mode
+        @include media-breakpoint-down(sm) {
+            .nav-item {
+                border-bottom: 1px solid #dee2e6;
+            }
+            .nav-tabs {
+                border-bottom: none;
+            }
+            &.o_form_editable .o_field_widget {
+                &:not(.o_stat_info):not(.o_readonly_modifier):not(.oe_form_field_html):not(.o_field_image) {
+                    min-height: 35px;
+                }
+                .o_x2m_control_panel {
+                    margin-bottom: 10px;
+                }
+                &.o_field_float_percentage,
+                &.o_field_monetary,
+                &.o_field_many2many_selection,
+                .o_field_many2one_selection {
+                    align-items: center;
+                }
+                .o_field_many2one_selection .o_input_dropdown,
+                &.o_datepicker,
+                &.o_partner_autocomplete_info {
+                    input {
+                        min-height: 35px;
+                    }
+                }
+                .o_external_button {
+                    margin-left: 10px;
+                }
+                .o_dropdown_button,
+                .o_datepicker_button {
+                    top: 8px;
+                    right: 6px;
+                    bottom: auto;
+                }
+                .o_field_many2many_selection .o_dropdown_button {
+                    top: 0 !important;
+                }
+            }
+        }
+
+        // Sticky statusbar
+
+        .o_form_statusbar {
+            position: sticky !important;
+            top: 0;
+            z-index: 2;
+        }
+
+        // Support for long title (with ellipsis)
+        .oe_title {
+            .o_field_widget:not(.oe_inline) {
+                display: block;
+                span:not(.o_field_translate):not(.o_status) {
+                    display: block;
+                    max-width: 100%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: initial;
+                    &:active {
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            min-width: auto;
+
+            // More buttons border
+            .oe_button_box {
+                .o_dropdown_more {
+                    button:last-child {
+                        border-right: 1px solid $gray-400 !important;
+                    }
+                }
+            }
+
+            .oe_button_box + .oe_title,
+            .oe_button_box + .oe_avatar + .oe_title {
+                width: 100%;
+            }
+
+            // Avoid overflow on modals
+            .o_form_sheet {
+                min-width: auto;
+            }
+
+            // Render website inputs properly in phones
+            .o_group .o_field_widget.o_text_overflow {
+                // Overrides another !important
+                width: auto !important;
+            }
+
+            // Full width in form sheets
+            .o_form_sheet,
+            .o_FormRenderer_chatterContainer {
+                min-width: auto;
+                max-width: 98% !important;
+            }
+
+            // Settings pages
+            .app_settings_block {
+                .row {
+                    margin: 0;
+                }
+            }
+
+            .o_FormRenderer_chatterContainer {
+                padding-top: initial;
+
+                // Display send button on small screens
+                .o_Chatter_composer {
+                    &.o-has-current-partner-avatar {
+                        grid-template-columns: 0px 1fr;
+                        padding: 1rem 1rem 1.5rem 1rem !important;
+                    }
+
+                    .o_Composer_sidebarMain {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    //No content message improvements on mobile
+    @include media-breakpoint-down(md) {
+        .o_view_nocontent {
+            top: 80px;
+        }
+        .o_nocontent_help {
+            box-shadow: none;
+        }
+        .o_sample_data_disabled {
+            display: none;
+        }
+    }
+}
+
+// Sticky Header & Footer in List View
+.o_list_view {
+    .table-responsive {
+        overflow: visible;
+        .o_list_table {
+            // th & td are here for compatibility with chrome
+            thead tr:nth-child(1) th {
+                position: sticky !important;
+                top: 0;
+                z-index: 999;
+            }
+            thead tr:nth-child(1) th {
+                background-color: var(--ListRenderer-thead-bg-color);
+                border-top: none !important;
+                border-bottom: none !important;
+                border-left: transparent;
+                box-shadow: inset 0 0 0 $o-community-color,
+                    inset 0 -1px 0 $o-community-color;
+            }
+            tfoot,
+            tfoot tr:nth-child(1) td {
+                position: sticky;
+                bottom: 0;
+            }
+            tfoot tr:nth-child(1) td {
+                background-color: $o-list-footer-bg-color;
+                border-top: none !important;
+                border-bottom: none !important;
+                box-shadow: inset 0 1px 0 $o-community-color,
+                    inset 0 0 0 $o-community-color;
+            }
+        }
+        .table {
+            thead tr:nth-child(1) th {
+                z-index: 1;
+            }
+        }
+    }
+}
+
+// Big checkboxes
+.o_list_view,
+.o_setting_container .o_setting_box {
+    .o_setting_right_pane {
+        margin-left: 34px;
+    }
+    .o-checkbox:not(.o_boolean_toggle) {
+        margin-right: 10px;
+        margin-top: -6px;
+        &.d-inline-block {
+            display: block !important;
+        }
+        .form-check-input {
+            height: 24px;
+            width: 24px;
+        }
+    }
+    .o_optional_columns_dropdown,
+    .o_add_favorite {
+        .o-checkbox {
+            margin-top: 0;
+        }
+        .form-check-input {
+            height: 1em !important;
+            width: 1em !important;
+        }
+    }
+}
+
+.o_setting_container .o_setting_box {
+    .o_setting_right_pane {
+        margin-left: 34px;
+    }
+    .o-checkbox:not(.o_boolean_toggle) {
+        margin-right: 10px;
+        .form-check-label {
+            &::after {
+                width: 24px;
+                height: 24px;
+            }
+            &::before {
+                outline: none !important;
+                border: 1px solid #4c4c4c;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+.o_chatter_header_container {
+    padding-top: $grid-gutter-width * 0.5;
+    top: 0;
+    position: sticky;
+    background-color: $o-view-background-color;
+    z-index: 1;
+}
+
+.o_FormRenderer_chatterContainer {
+    &.o-isInFormSheetBg:not(.o-aside) {
+        background-color: $white;
+        &:not(.o-aside) {
+            width: auto;
+            border-top: 1px solid $border-color;
+        }
+    }
+    &.o-aside {
+        flex: 0 0 $chatter_zone_width;
+        max-width: initial;
+        min-width: initial;
+        overflow: auto;
+    }
+}
+
+body:not(.o_statusbar_buttons) {
+    .oe-toolbar {
+        z-index: 0;
+    }
+}
+
+.o_inner_group > .mb-sm-0 {
+    margin-bottom: 0 !important;
+}
+
+.w-26 {
+    width: 26%;
+}
+
+// Color clue to tell the difference between a note and a public message
+.o_Chatter_composer {
+    // HACK: has() pseudo class is broadly supported in desktop, even FF will deploy
+    // full support soon (now it's available behind a config flag)
+    // https://caniuse.com/css-has
+    &:has(div.o_Composer_coreHeader) {
+        background-color: lighten($o-brand-primary, 40%);
+    }
+}
+
+.o_searchview_autocomplete {
+    z-index: 999;
+}
